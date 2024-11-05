@@ -1,0 +1,9 @@
+{
+    "name": "Idan",
+    "age": 25,
+    "skills": ["Groovy", "Jenkins", "DevOps"],
+    "address": {
+        "city": "Tel Aviv",
+        "country": "Israel"
+    }
+}
