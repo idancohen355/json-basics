@@ -28,7 +28,7 @@ pipeline {
         stage('Read JSON') {
             steps {
                 script {
-                    def jsonFilePath = 'path/to/your/sample.json'  // Make sure this path is correct
+                    def jsonFilePath = 'sample.json'  // Make sure this path is correct
                     def jsonString = readJsonFile(jsonFilePath)
                     echo "JSON Content as String: ${jsonString}"
                 }
