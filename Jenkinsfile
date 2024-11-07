@@ -28,7 +28,7 @@ pipeline {
         stage('Read JSON') {
             steps {
                 script {
-                    def jsonFilePath = 'json-basics/sample.json'  // Make sure this path is correct
+                    def jsonFilePath = "${env.WORKSPACE}/sample.json" // Points to the workspace
                     def jsonString = readJsonFile(jsonFilePath)
                     echo "JSON Content as String: ${jsonString}"
                 }
